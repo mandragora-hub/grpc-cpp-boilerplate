@@ -25,3 +25,6 @@ RUN mkdir -p /deps/grpc/build && cd /deps/grpc/build && \
       -DgRPC_BUILD_TESTS=OFF \
       .. && \ 
       make -j8 && make install
+
+# Clean grpc/build
+RUN rm -rf /deps/grpc
