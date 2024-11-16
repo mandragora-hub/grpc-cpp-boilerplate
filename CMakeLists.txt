@@ -70,6 +70,10 @@ target_link_libraries(route_guide_helper
   ${_GRPC_GRPCPP}
   ${_PROTOBUF_LIBPROTOBUF})
 
+# Copy route_guide_db.json to build directory
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/route_guide_db.json
+    DESTINATION ${CMAKE_CURRENT_BINARY_DIR}) 
+
 # Targets route_guide_(client|server)
 foreach(_target
   route_guide_client route_guide_server)
