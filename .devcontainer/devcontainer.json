@@ -24,7 +24,10 @@
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
-			"extensions": ["ms-vscode.cpptools-extension-pack"]
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack", 
+				"zxh404.vscode-proto3"
+			]
 		}
 	}
 
