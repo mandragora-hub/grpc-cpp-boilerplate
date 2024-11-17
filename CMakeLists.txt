@@ -76,7 +76,10 @@ file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/route_guide_db.json
 
 # Targets route_guide_(client|server)
 foreach(_target
-  route_guide_client route_guide_server)
+  route_guide_client
+  route_guide_server
+  route_guide_callback_client
+  route_guide_callback_server)
   add_executable(${_target}
     "${_target}.cc")
   target_link_libraries(${_target}
